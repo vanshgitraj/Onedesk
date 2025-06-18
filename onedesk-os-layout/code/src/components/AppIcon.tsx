@@ -1,4 +1,5 @@
-// src/components/AppIcon.tsx import React from 'react';
+// src/components/AppIcon.tsx 
+import React from 'react';
 
 interface AppIconProps { name: string; icon: React.ReactNode; onClick?: () => void; }
 
