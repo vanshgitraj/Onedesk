@@ -1,0 +1,17 @@
+[
+  {
+    "name": "One Finance",
+    "icon": "💰",
+    "route": "/onefinance"
+  },
+  {
+    "name": "Settings",
+    "icon": "⚙️",
+    "route": "/settings"
+  },
+  {
+    "name": "Docs",
+    "icon": "📄",
+    "route": "/docs"
+  }
+]
