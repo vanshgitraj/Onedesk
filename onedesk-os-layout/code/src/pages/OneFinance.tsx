@@ -1,4 +1,5 @@
-// src/pages/OneFinance.tsx import React from 'react';
+// src/pages/OneFinance.tsx 
+import React from 'react';
 
 const OneFinance: React.FC = () => (
 
