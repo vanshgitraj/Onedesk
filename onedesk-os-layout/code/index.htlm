@@ -1,22 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Primary Meta Tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0a0a0a" />
     <meta name="description" content="OneDesk – Your personal digital operating system for finance and beyond." />
-    <meta name="keywords" content="OneDesk, Fintech OS, Personal Finance, Loan Management, Credit Score, Overdraft, EMI, CIBIL" />
+    <meta name="keywords" content="OneDesk, Fintech OS, Personal Finance, Loan Management, Credit Score, Overdraft, EMI, CIBIL, AI Assistant" />
     <meta name="author" content="Vansh Raj" />
 
-    <link rel="icon" href="/logo.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="/logo.png" />
-
+    <!-- Page Title -->
     <title>OneDesk – Fintech OS for Everyone</title>
 
-    <!-- Font (Optional but Premium Look) -->
+    <!-- Icons -->
+    <link rel="icon" href="/logo.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/logo.png" />
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Font: Inter for clean professional UI -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
 
-    <!-- Style Reset (Optional for Consistency) -->
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="OneDesk – Fintech OS for Everyone" />
+    <meta property="og:description" content="Your personal digital operating system for finance, credit management, and growth." />
+    <meta property="og:image" content="/cover.png" />
+    <meta property="og:url" content="https://onedesk.ai" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="OneDesk – Fintech OS for Everyone" />
+    <meta name="twitter:description" content="Manage credit, get instant loan offers, track EMI, and improve CIBIL – all from OneDesk." />
+    <meta name="twitter:image" content="/cover.png" />
+
+    <!-- Reset CSS + Smooth UX -->
     <style>
       * {
         margin: 0;
@@ -30,14 +47,28 @@
         height: 100%;
         width: 100%;
         overflow: hidden;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      @media (prefers-color-scheme: light) {
+        html, body {
+          background-color: #ffffff;
+          color: #000000;
+        }
       }
     </style>
   </head>
 
   <body>
+    <noscript>
+      <strong>We're sorry but OneDesk doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+
+    <!-- App Root Mount -->
     <div id="root"></div>
 
-    <!-- Main App Bundle -->
+    <!-- Main App Script -->
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
