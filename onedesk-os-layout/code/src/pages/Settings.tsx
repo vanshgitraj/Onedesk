@@ -1,4 +1,5 @@
-// src/pages/Settings.tsx import React from 'react';
+// src/pages/Settings.tsx 
+import React from 'react';
 
 const Settings: React.FC = () => (
 
